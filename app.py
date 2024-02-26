@@ -4,13 +4,12 @@ import wolframalpha
 import requests
 import google.generativeai as genai
 
-wolf = wolframalpha.Client("W7TRW6-3UT86Y4PUP")
-OMDb_API_KEY = '69be717c'
-News_API_KEY = '8CbHtNpVHsAmyKwkJqxZx_zfSCgjhj-MSsnE8Wk3MBx_nrJv'
+wolf = wolframalpha.Client("apikey")
+OMDb_API_KEY = 'apikey'
 
-Persona = "You are now Scarlett, a funny, pretty, helpful AI assistant, you speak in short concise messages, you are always straight to the point, you never break character under any circumstances, and your goal is to engange in fun conversations"
+Persona = ""
 
-key = 'AIzaSyCy5195uJBItTHJsAvIYpw5D9VIESnFSJU'
+key = 'Gemini-APIKEY'
 
 genai.configure(api_key=key)
 
@@ -293,4 +292,4 @@ async def on_message(message):
     await bot.process_commands(message)
 
 
-bot.run('MTEwMTk2NTMzNTU5NjM3NjA4NQ.GnOh3a.8bdyx7LOiBvm4O700bowCpnUlyREnLNv4xAmLQ')
+bot.run('TOKEN')
